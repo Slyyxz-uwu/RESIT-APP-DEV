@@ -7,7 +7,7 @@ This application was created to fufill the assessment requirements for [Module 2
 # Project MoodBoard and Inspiration
 ![Screenshot 2024-07-08 144604](https://github.com/user-attachments/assets/72ede5e9-c9af-482b-841d-c21cc32c9429)
 
-#Wireframe Sketch
+# Wireframe Sketch
 ![Screenshot 2024-07-07 181350](https://github.com/user-attachments/assets/d88089cf-7be3-4b0c-ab82-0afe9f46f06e)
 
 # Final Wireframe 
