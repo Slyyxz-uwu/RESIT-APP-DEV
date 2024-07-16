@@ -1,0 +1,143 @@
+.map-content {
+  z-index:99999;
+  width: 100vw;
+  height: 100%;
+}
+ 
+#display-name {
+  font-size:24px;
+}
+.page-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color:#1D1D1D;
+
+}
+
+.pageweather{      
+  width: auto;
+  height: 100%;
+
+}
+  
+.pagehome{
+  
+  width: auto;
+  height: 100%;
+
+}
+#search-image{
+width: 35px;
+height: 35px;
+}
+
+#map-image{
+  width: 40px;
+  height: 40px;
+  }
+
+#settings-image{
+    width: 48px;
+    height: 48px;
+    }
+
+
+#user-input{
+  margin-top: 15%;
+  width: 330px;
+  margin-left: 10%;
+
+}
+
+#background {
+  background-color: #1D1D1D;
+}
+
+#search-button {
+  margin-top: 5%;
+  width: 280px;
+  margin-left: 65px;
+  border-radius: 20px;
+  height: 35px;
+}
+
+#title-edit {
+margin-left: 115px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 25px;
+}
+
+#sett-edit {
+  margin-left: 125px;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#description-edit {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 6px;
+  text-align: center;
+  color: rgb(223, 221, 221);
+  font-size: 20px;
+}
+
+#keywords-edit {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  color: rgb(223, 221, 221);
+}
+
+#header-edit {
+  color: white;
+  text-align: center;
+  padding-top: 90px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 40px;
+}
+
+#settings-card {
+  padding-top: 35px;
+
+}
+
+#card-title {
+  font-size: 23px;
+  padding-bottom: 18px;
+}
+
+#subtitle {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+#lakeParameter {
+  font-size: 20px;
+}
+
+#stormParameter {
+  font-size: 20px;
+
+}
+
+#volcanoParameter {
+  font-size: 20px;
+
+}
+
+#fireParameter {
+  font-size: 20px;
+
+}
+
+#save-button {
+  border-radius: 15px;
+  width: 250px;
+  height: 30px;
+}
