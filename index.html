@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Global Event Tracker">
+
+  <!-- Accessing CSS and Ionic Bundles -->
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+  <!-- Accessing Leaflet Map -->
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""></script>
+
+  <!-- Linking files together  -->
+
+  <script src="apiKey.js"></script>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="index.css"/>
+
+</head>
+<body id= "background">
+    <ion-app>
+        <ion-tabs>
+<!----------------------------------------------------------------------->
+        <!-- Tab page for Search  -->
+
+        <ion-tab tab="Searches">
+            <ion-nav id="search-nav"></ion-nav>
+            <div id="search-page">
+              <ion-header>
+                <ion-toolbar color="dark">
+                  <ion-title id="title-edit"><b>EvenTrack</b></ion-title>
+                </ion-toolbar> 
+              </ion-header>
+             <div id="searchbar-edit">
+              <h1 id="header-edit">TRACK RECENT CALAMITIES, STAY INFORMED.</h1>
+              <ion-searchbar id= "user-input" placeholder="Type in a keyword..."></ion-searchbar>
+            </div>
+            <ion-button id=search-button onclick="searchButton()">Search</ion-button>
+            <div id="description-edit">
+           <p>Search for a specific event happening in the world by typing a common keyword, the list of currently supported keywords is found below.</p>
+            </div>
+            <div id="keywords-edit">
+              <p>Currently supported keywords by the NASA API:
+               <b>seaLakeIce, severeStorms, volcanoes, wildfires.</b>
+              </p>
+            </div>
+            <ion-tab>
+              <!-- The content fills the space between a header and footer.-->
+              <ion-content fullscreen="true">
+                <div class = "page-content" id="searching"></div>
+              </ion-content>
+            </div>
+          </ion-tab>
+  
+<!----------------------------------------------------------------------->
+        <!-- Tab page for Map  -->
+
+        <ion-tab tab="Map">
+            <ion-nav id="map-nav"></ion-nav>
+            <div id="map-page">
+              <ion-header>
+                <ion-toolbar color="dark">
+                  <ion-title id="title-edit">Event Map</ion-title>
+                </ion-toolbar> 
+              </ion-header>
+              </ion-tab>
+
+<!-- The content fills the space between a header and footer.-->
+                   <ion-content fullscreen="true">
+                    <div class = "map-content" id="map"></div>
+                  </ion-content>
+                </div>
+              </ion-tab>
+
+<!----------------------------------------------------------------------->
+        <!-- Tav page for Settings -->
+
+        <ion-tab tab="Settings">
+            <ion-nav id="sett-nav"></ion-nav>
+            <div id="settings-page">
+              <ion-header>
+                <ion-toolbar color="dark">
+                  <ion-title id="sett-edit">Settings</ion-title>
+                </ion-toolbar> 
+              </ion-header>
+              <ion-card id="settings-card" color="dark">
+                <ion-card-content>
+                <ion-card-subtitle id="subtitle">Recent Search Settings</ion-card-subtitle>
+                  <ion-card-title id=card-title color="dark">If you want to keep track of what your recent keyword search is, please click the button below.</ion-card-title>
+                  <ion-list>
+                      <ion-item>
+                        <ion-button id="save-button">Save Search</ion-button>
+                      </ion-item>
+                      <ion-item>
+                        <ion-label id="search-output"></ion-label>
+                      </ion-item>
+                  </ion-list>
+                </ion-card-content>
+              </ion-card>
+
+              </ion-tab>
+
+<!-- The content fills the space between a header and footer.-->
+                   <ion-content fullscreen="true">
+                    <div class = "page-content" id="settings"></div>
+                  </ion-content>
+                </div>
+              </ion-tab>
+
+<!----------------------------------------------------------------------->
+        <!-- Tab Bar -->
+        <ion-tab-bar slot="bottom" color="dark"> 
+            <!-- Ionic button for Search tab -->
+            <ion-tab-button tab="Searches">
+            <img src="icons/search.png" id="search-image">  
+            </ion-tab-button>
+  
+            <!-- Ionic button for Map Tab -->
+            <ion-tab-button tab="Map" > 
+              <img src="icons/map.png"i id= "map-image"> 
+            </ion-tab-button>
+  
+            <!-- Ionic button for Settings Tab -->
+            <ion-tab-button tab="Settings">
+              <img src="icons/settings.png" id="settings-image">
+            </ion-tab-button>
+
+          </ion-tab-bar>
+        </ion-tabs>
+    </ion-app>
+    
+</body>
+</html>
